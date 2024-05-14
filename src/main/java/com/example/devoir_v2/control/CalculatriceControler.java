@@ -23,9 +23,10 @@ public class CalculatriceControler extends HttpServlet {
 
 
 
-    @Override
+   /* @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println("je suis dans le doGet");
         // Récupérer les données du formulaire
         int poids = Integer.parseInt(request.getParameter("poids"));
         int taille = Integer.parseInt(request.getParameter("taille"));
@@ -63,11 +64,12 @@ public class CalculatriceControler extends HttpServlet {
             throw new RuntimeException(se);
         }
 
-    }
+    }*/
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println("je suis dans le doPost");
         // Récupérer les données du formulaire
         int poids = Integer.parseInt(request.getParameter("poids"));
         int taille = Integer.parseInt(request.getParameter("taille"));
@@ -78,12 +80,12 @@ public class CalculatriceControler extends HttpServlet {
         b = new BMR(poids,taille,age,activityLvl,genre);
 
         result = c.CalculeBmr(b);
+
         request.setAttribute("result", result);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/result.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("");
         dispatcher.forward(request, response);
 
-        System.out.println("allo");
         System.out.println(result);
 
         try{

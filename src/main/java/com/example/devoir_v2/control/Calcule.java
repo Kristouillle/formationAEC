@@ -30,7 +30,7 @@ public class Calcule {
             bmrCalcule = (655.1+(9.563*b.getPoids())+(1.85*b.getTaille())-(6.755*b.getAge()))*activityModifier;
         }
         System.out.println(bmrCalcule);
-        System.out.println("hello!");
+        System.out.println("je suis dans le Calcule");
         return bmrCalcule;
     }
 }

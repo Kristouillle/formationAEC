@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Formulaire de données</h1>
-<form action="#" method="post">
+<form method="post">
     <label for="poids">Poids (en kg):</label>
     <input type="number" id="poids" name="poids" required><br><br>
 
@@ -32,8 +32,8 @@
     </select><br><br>
 
     <input type="submit" value="Soumettre">
+    <input type="text" name="result" value="${result}" readonly>
 </form>
-<h2>BMR:</h2>
 <br/>
 <a href="page2">Hello Servlet</a>
 </body>
