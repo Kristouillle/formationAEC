@@ -23,13 +23,14 @@ public class Calcule {
         }
 
 
-        if (b.isSex()){
-            bmrCalcule = (66.47 + (13.75*b.getPoids())+(5.003*b.getTaille())-(6.755*b.getAge()))*b.getActivityLvl();
+        if (b.getSex()=="homme"){
+            bmrCalcule = (66.47 + (13.75*b.getPoids())+(5.003*b.getTaille())-(6.755*b.getAge()))*activityModifier;
         }
         else {
-            bmrCalcule = (655.1+(9.563*b.getPoids())+(1.85*b.getTaille())-(6.755*b.getAge()))*b.getActivityLvl();
+            bmrCalcule = (655.1+(9.563*b.getPoids())+(1.85*b.getTaille())-(6.755*b.getAge()))*activityModifier;
         }
-
+        System.out.println(bmrCalcule);
+        System.out.println("hello!");
         return bmrCalcule;
     }
 }

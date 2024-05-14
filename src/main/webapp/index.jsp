@@ -5,7 +5,7 @@
     <title>Calculatrice de BMR</title>
 </head>
 <body>
-<h2>Formulaire de données</h2>
+<h1>Formulaire de données</h1>
 <form action="#" method="post">
     <label for="poids">Poids (en kg):</label>
     <input type="number" id="poids" name="poids" required><br><br>
@@ -33,6 +33,7 @@
 
     <input type="submit" value="Soumettre">
 </form>
+<h2>BMR:</h2>
 <br/>
 <a href="page2">Hello Servlet</a>
 </body>

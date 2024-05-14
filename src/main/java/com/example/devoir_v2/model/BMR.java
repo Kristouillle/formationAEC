@@ -2,10 +2,10 @@ package com.example.devoir_v2.model;
 
 public class BMR {
     int poids, taille, age, activityLvl;
-    boolean sex;
+    String sex;
 
 
-    public BMR(int poids, int taille, int age, int activityLvl, boolean sex) {
+    public BMR(int poids, int taille, int age, int activityLvl, String sex) {
         this.poids = poids;
         this.taille = taille;
         this.age = age;
@@ -29,7 +29,7 @@ public class BMR {
         return activityLvl;
     }
 
-    public boolean isSex() {
+    public String getSex() {
         return sex;
     }
 
@@ -50,7 +50,7 @@ public class BMR {
         this.activityLvl = activityLvl;
     }
 
-    public void setSex(boolean sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 }
