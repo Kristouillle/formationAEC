@@ -10,10 +10,15 @@
 <html>
 <head>
     <title>MOTIVATION</title>
+    <link rel="stylesheet" type="text/css" href="Ressources/page3.css">
 </head>
 <body>
-<h1>MOTIVATION</h1>
+<img src="Ressources/motivation.gif" class="entete">
+<br>
+<img src="Ressources/skeletal-muscular.gif">
+<img src="Ressources/skeleton-skull.gif">
 
+<br>
 
 <a href="index.jsp">Retour en arrière</a>
 

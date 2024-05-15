@@ -10,14 +10,15 @@
 <html>
 <head>
     <title>Calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="Ressources/formStyle.css">
 </head>
 <body>
-<h1>Form</h1>
+<h1>Calculer mon BMR</h1>
 <form action="BMRServlet" method="post">
-    <label for="weight">Weight (kg):</label>
+    <label for="weight">Poids (kg):</label>
     <input type="number" id="weight" name="weight" required><br><br>
 
-    <label for="height">Height (cm):</label>
+    <label for="height">Taille (cm):</label>
     <input type="number" id="height" name="height" required><br><br>
 
     <label for="age">Age:</label>
@@ -38,14 +39,16 @@
         <option value="4">Extra (actif et job physique)</option>
     </select><br><br>
 
-    <input type="submit" value="Calculate BMR">
-</form>
-
-<label>
+    <input type="submit" value="Calculer">
+    <br><br>
+    <label class="reponse">
     <!-- This label will be updated with the BMR result -->
     BMR: ${bmr}
 </label>
-<br>
+</form>
+
+<br><br>
+
 <a href="index.jsp">Retour en arrière</a>
 
 </body>
