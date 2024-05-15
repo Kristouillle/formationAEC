@@ -9,7 +9,7 @@
 
 <br/>
 <a href="page2.jsp">Calculatrice de BMR</a>
-<br>
+<br><br>
 <a href="page3.jsp">Page de motivation</a>
 </body>
 </html>
