@@ -35,6 +35,6 @@
     <input type="text" name="result" value="${result}" readonly>
 </form>
 <br/>
-<a href="helloServlet">Hello Servlet</a>
+<a href="page2.jsp">Hello Servlet</a>
 </body>
 </html>
