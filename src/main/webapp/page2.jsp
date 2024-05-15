@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your JSP Page</title>
+    <title>Calculatrice</title>
 </head>
 <body>
 <h1>Form</h1>
