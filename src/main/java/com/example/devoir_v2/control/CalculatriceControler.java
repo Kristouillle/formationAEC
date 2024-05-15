@@ -23,7 +23,7 @@ public class CalculatriceControler extends HttpServlet {
 
 
 
-   /* @Override
+   @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("je suis dans le doGet");
@@ -40,6 +40,13 @@ public class CalculatriceControler extends HttpServlet {
         request.setAttribute("age", age);
         request.setAttribute("genre", genre);
         request.setAttribute("activityLvl", activityLvl);
+
+        // Set attributes to B
+        b.setPoids(poids);
+        b.setTaille(taille);
+        b.setAge(age);
+        b.setSex(genre);
+        b.setActivityLvl(activityLvl);
 
         // Set attributes in session
         HttpSession session = request.getSession();
@@ -64,7 +71,7 @@ public class CalculatriceControler extends HttpServlet {
             throw new RuntimeException(se);
         }
 
-    }*/
+    }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
